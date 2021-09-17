@@ -49,6 +49,5 @@ export const deletePlayer = (req, res) => {
     if (err) {
       res.send(err);
     }
-    res.json({ message: "Deleted the Player" });
   });
 };

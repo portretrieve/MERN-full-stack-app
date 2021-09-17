@@ -8,11 +8,7 @@ import {
 
 const routes = (app) => {
   app.route("/players").get(getAllPlayers).post(addNewPlayer);
-  app
-    .route("/players/:PlayerId")
-    .get(getPlayerWithId)
-    .put(updatePlayer)
-    .delete(deletePlayer);
+  app.route("/players/:PlayerId").get(getPlayerWithId).put(updatePlayer);
 };
 
 export default routes;

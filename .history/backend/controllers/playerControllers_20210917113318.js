@@ -45,10 +45,5 @@ export const updatePlayer = (req, res) => {
 };
 
 export const deletePlayer = (req, res) => {
-  Player.remove({ _id: req.params.PlayerId }, (err) => {
-    if (err) {
-      res.send(err);
-    }
-    res.json({ message: "Deleted the Player" });
-  });
+  Player.remove({ _id: req.params.PlayerId });
 };
