@@ -19,8 +19,6 @@ app.use(
   })
 );
 
-app.use(cors());
-
 routes(app);
 
 app.get("/", (req, res) => {

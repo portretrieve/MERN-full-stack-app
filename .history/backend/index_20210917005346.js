@@ -1,7 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
 import routes from "./routes/soccerRoutes";
-import cors from "cors";
 const app = express();
 const PORT = 5000;
 
@@ -18,8 +17,6 @@ app.use(
     extended: true
   })
 );
-
-app.use(cors());
 
 routes(app);
 
